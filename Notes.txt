@@ -1,0 +1,82 @@
+MRF (Map Reduce Filter) : these are HOF(Function inside a function)
+Map: It iterates/transforms over each and every element in array and produces new array.
+syntax:-
+arrayname.map(we need to pass a function)
+
+example 1: 
+
+
+example 2: 
+
+
+example 3: 
+
+
+example 4: 
+
+
+//when there is only one line in function which return something
+example 5: 
+
+
+Filter:- 
+It is basically used to filter😂.
+It is acutally used to filter elements inside the array
+const arr = [5,1,3,2,6] filter odd numbers
+
+example 1: 
+
+example 2: 
+
+
+example 3: 
+
+Reduce:-(confusing topic it is not similar to the name)
+It is generally used when we have to take all the array elements and
+print a single value. example: greatest number in an array.
+
+example:- sum of all the elements in an array
+first without using reduce
+
+
+
+using reduce function
+
+
+
+Reduce function takes 2 arugument first one if function and second one is any initial value which we need to pass inside the accumulator.
+
+example:- find the maximum value in the array
+
+
+
+//using reduce function
+
+
+***---------------------------------------------***
+More examples on MRF
+ lets take example like data from API
+
+const users = [
+{firstName: "Kamal",lastName: "Hasan",age:60},
+{firstName: "Donald",lastName: "Trump",age:60},
+{firstName: "Rajini",lastName: "Kanth",age:70},
+{firstName: "Ajith",lastName: "Kumar",age:40},
+];
+
+//List full names
+const output = arr.map((x)=>x.firstName+" "+ x.lastName)
+
+
+
+//finding ages example {60:2 , 70:1 , 40:1}
+
+//Find out the firstname of all people who's age is less than 60
+
+
+
+
+
+
+
+
